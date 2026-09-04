@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier de professionnalisation — Raphaël, PCP</title>
+  <meta name="description" content="Atelier de professionnalisation de Raphaël, étudiant BTS SIO SISR — mise en place d'un accès distant sécurisé.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenu-principal">Aller au contenu principal</a>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Raphaël</span>
+        <span class="brand-tag">PCP</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="les-stages.html">Les Stages</a></li>
+          <li><a href="atelier-professionnalisation.html" aria-current="page">Atelier de professionnalisation</a></li>
+          <li><a href="certification.html">Certification</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu-principal">
+
+    <!-- ===================== EN-TÊTE DE PAGE ===================== -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <p class="page-eyebrow">BTS SIO — SISR</p>
+        <h1>Atelier de professionnalisation</h1>
+        <p class="page-lead">
+          Mise en place d'un accès distant sécurisé à un service interne,
+          dans le cadre d'un atelier de professionnalisation du BTS SIO,
+          option SISR.
+        </p>
+
+        <dl class="hero-meta">
+          <div class="hero-meta-item">
+            <dt>Contexte</dt>
+            <dd>BTS SIO — SISR</dd>
+          </div>
+          <div class="hero-meta-item">
+            <dt>Modalité</dt>
+            <dd>[À compléter]</dd>
+          </div>
+          <div class="hero-meta-item">
+            <dt>Durée</dt>
+            <dd>[À compléter]</dd>
+          </div>
+        </dl>
+
+        <p class="todo-note">
+          <span aria-hidden="true">//</span>
+          <span><strong>À personnaliser :</strong> ce scénario (accès
+          distant via WireGuard) est un exemple. Remplace-le par le sujet
+          réel de ton atelier de professionnalisation si besoin.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== CONTEXTE ET PROBLÉMATIQUE ===================== -->
+    <section class="content-section" aria-labelledby="contexte-atelier-title">
+      <div class="content-section-inner">
+        <h2 id="contexte-atelier-title">Contexte et problématique</h2>
+        <p class="prose">
+          [Décris ici le besoin de départ : par exemple, permettre à un
+          utilisateur ou un administrateur d'accéder à un service hébergé
+          sur un réseau local depuis l'extérieur, sans exposer directement
+          ce service sur Internet.]
+        </p>
+        <p class="prose">
+          [Précise les contraintes à respecter : sécurité des accès,
+          simplicité de mise en œuvre, compatibilité avec l'infrastructure
+          existante.]
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== SOLUTION MISE EN ŒUVRE ===================== -->
+    <section class="content-section" aria-labelledby="solution-title">
+      <div class="content-section-inner">
+        <h2 id="solution-title">Solution mise en œuvre</h2>
+        <ol class="steps-list">
+          <li class="step-item">
+            <span class="step-number">1</span>
+            <div class="step-content">
+              <h3>Analyse du besoin</h3>
+              <p>Identification du service à exposer et des utilisateurs
+                concernés par l'accès distant.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-number">2</span>
+            <div class="step-content">
+              <h3>Choix de la solution technique</h3>
+              <p>Sélection de WireGuard pour la création d'un tunnel VPN
+                léger, chiffré et simple à maintenir.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-number">3</span>
+            <div class="step-content">
+              <h3>Déploiement</h3>
+              <p>Installation et configuration du serveur WireGuard,
+                génération des paires de clés, création des profils client.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-number">4</span>
+            <div class="step-content">
+              <h3>Tests et sécurisation</h3>
+              <p>Vérification de la connexion distante, contrôle des règles
+                de pare-feu et restriction des accès au strict nécessaire.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-number">5</span>
+            <div class="step-content">
+              <h3>Documentation</h3>
+              <p>Rédaction d'une procédure de configuration et d'un schéma
+                réseau pour faciliter la maintenance future.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== COMPÉTENCES MOBILISÉES ===================== -->
+    <section class="content-section" aria-labelledby="competences-atelier-title">
+      <div class="content-section-inner">
+        <h2 id="competences-atelier-title">Compétences mobilisées</h2>
+        <ul class="tag-list mono">
+          <li>WireGuard VPN</li>
+          <li>Routage</li>
+          <li>Pare-feu</li>
+          <li>Documentation technique</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== BILAN ===================== -->
+    <section class="content-section" aria-labelledby="bilan-atelier-title">
+      <div class="content-section-inner">
+        <h2 id="bilan-atelier-title">Bilan</h2>
+        <p class="prose">
+          [Explique ce que cet atelier t'a permis d'apprendre : difficultés
+          rencontrées, choix techniques justifiés, ce que tu ferais
+          différemment aujourd'hui.]
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER / CONTACT ===================== -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <h2>Contact</h2>
+        <p class="footer-location">Rennes / Monterfil, France</p>
+
+        <div class="footer-links">
+          <a class="footer-link" href="https://github.com/votre-pseudo" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            GitHub
+          </a>
+          <a class="footer-link" href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <a class="btn btn-primary" href="cv-raphael.pdf" download>Télécharger mon CV</a>
+    </div>
+
+    <p class="footer-copy">© 2026 Raphaël — BTS SIO SISR</p>
+  </footer>
+
+</body>
+</html>
