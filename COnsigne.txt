@@ -1,0 +1,16 @@
+cd C:\Users\Raphaël\PCP
+
+# 1. Vérifier remote
+git remote -v
+
+# 2. Si besoin, corriger l’URL (remplace par tes infos)
+git remote set-url origin git@github.com:TON_USER/TON_REPO.git
+
+# 3. Tester SSH
+ssh -T git@github.com
+
+# 4. Si SSH OK, faire le push
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -u origin main
