@@ -579,15 +579,24 @@ svg {
   justify-content: center;
 }
 
-.step-content h3 {
+.step-content h3,
+.step-content h4 {
   font-size: 1rem;
   font-weight: 700;
+  color: var(--color-text-primary);
   margin-bottom: 0.25rem;
 }
 
 .step-content p {
   font-size: 0.9375rem;
   color: var(--color-text-secondary);
+}
+
+/* Sous-titre à l'intérieur d'un bloc (ex. plusieurs stages sur une même page) */
+.subheading {
+  font-size: 1.0625rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 /* Carte de certification (réutilise l'esthétique .project-card) */
