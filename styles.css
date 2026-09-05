@@ -603,7 +603,7 @@ svg {
 .cert-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 6rem;
   margin-top: 1.5rem;
 }
 
