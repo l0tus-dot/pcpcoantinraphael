@@ -132,7 +132,6 @@ svg {
 
 .header-inner,
 .hero-inner,
-.footer-inner,
 .page-hero-inner,
 .content-section-inner {
   width: 100%;
@@ -446,36 +445,6 @@ svg {
 }
 
 /* =====================================================================
-   BOUTONS
-   ===================================================================== */
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-sans);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--radius-md);
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: background-color 0.15s ease, transform 0.15s ease;
-  white-space: nowrap;
-}
-
-.btn-primary {
-  background-color: var(--color-accent-orange);
-  color: #111827;
-}
-
-.btn-primary:hover,
-.btn-primary:focus-visible {
-  background-color: #fb923c;
-  transform: translateY(-1px);
-}
-
-/* =====================================================================
    FOOTER / CONTACT
    ===================================================================== */
 
@@ -485,52 +454,11 @@ svg {
   background-color: var(--color-bg-header);
 }
 
-.footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding-block: 3rem;
-}
-
-.footer-main h2 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.footer-location {
-  font-size: 0.9375rem;
-  color: var(--color-text-secondary);
-  margin-bottom: 1.25rem;
-}
-
-.footer-links {
-  display: flex;
-  gap: 1.25rem;
-}
-
-.footer-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  color: var(--color-text-body);
-  transition: color 0.15s ease;
-}
-
-.footer-link:hover,
-.footer-link:focus-visible {
-  color: var(--color-accent-blue);
-}
-
 .footer-copy {
   text-align: center;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--color-text-secondary);
-  border-top: 1px solid var(--color-border);
   padding: 1.25rem 1.5rem;
 }
 
@@ -730,16 +658,5 @@ svg {
 
   .hero-photo {
     margin-inline: auto;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .btn {
-    width: 100%;
   }
 }
