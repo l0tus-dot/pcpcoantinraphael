@@ -600,6 +600,13 @@ svg {
 }
 
 /* Carte de certification (réutilise l'esthétique .project-card) */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
 .cert-meta {
   display: flex;
   flex-wrap: wrap;
