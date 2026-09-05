@@ -603,7 +603,7 @@ svg {
 .cert-list {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 2rem;
   margin-top: 1.5rem;
 }
 
@@ -633,6 +633,109 @@ svg {
   font-size: 0.9375rem;
   font-weight: 600;
   color: var(--color-text-primary);
+}
+
+/* =====================================================================
+   SOMMAIRE D'ANCRAGE (pages à plusieurs blocs)
+   ===================================================================== */
+
+.page-toc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.page-toc-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.page-toc a {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-body);
+  transition: color 0.15s ease;
+}
+
+.page-toc a:hover,
+.page-toc a:focus-visible {
+  color: var(--color-accent-blue);
+}
+
+/* =====================================================================
+   BOUTON RETOUR EN HAUT
+   ===================================================================== */
+
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+  z-index: 40;
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  color: var(--color-accent-blue);
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+/* =====================================================================
+   LIEN "PILL" RÉUTILISABLE (ex. page 404)
+   ===================================================================== */
+
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-accent-blue);
+  background: var(--color-accent-blue-dim);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.pill-link:hover,
+.pill-link:focus-visible {
+  background: rgba(59, 130, 246, 0.22);
+  transform: translateY(-1px);
+}
+
+/* Variante d'erreur pour .status-badge (ex. page 404) */
+.status-badge.status-error {
+  color: var(--color-accent-orange);
+  background: var(--color-accent-orange-dim);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.page-hero-badge {
+  margin-bottom: 1.25rem;
 }
 
 /* =====================================================================
