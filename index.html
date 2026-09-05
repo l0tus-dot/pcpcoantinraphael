@@ -41,128 +41,81 @@
       <div class="hero-grid-bg" aria-hidden="true"></div>
 
       <div class="hero-inner">
-        <p class="hero-eyebrow">
-          <span class="status-dot" aria-hidden="true"></span>
-          Disponible pour un stage ou une alternance
-        </p>
+        <div class="hero-layout">
+          <div class="hero-content">
+            <p class="page-eyebrow">Portfolio</p>
 
-        <h1>Raphaël <span class="hero-title-secondary">— Technicien Système &amp; Réseau</span></h1>
+            <h1>Bienvenue dans mon portfolio</h1>
 
-        <p class="hero-subtitle">
-          Étudiant en BTS Services Informatiques aux Organisations, option SISR,
-          je conçois et sécurise des infrastructures serveurs et réseau. Passionné
-          par l'administration système et les outils open-source, j'aime comprendre
-          ce qui fait fonctionner une infrastructure, de la machine virtuelle
-          jusqu'au tunnel VPN.
-        </p>
+            <p class="hero-name">Raphaël</p>
+            <p class="hero-role">BTS SIO — option SISR</p>
+            <p class="hero-role-secondary">Technicien Système &amp; Réseau</p>
 
-        <dl class="hero-meta">
-          <div class="hero-meta-item">
-            <dt>Formation</dt>
-            <dd>BTS SIO — SISR</dd>
+            <p class="hero-status">
+              <span class="status-dot" aria-hidden="true"></span>
+              Disponible pour un stage ou une alternance
+            </p>
+
+            <dl class="hero-meta">
+              <div class="hero-meta-item">
+                <dt>Formation</dt>
+                <dd>BTS SIO — SISR</dd>
+              </div>
+              <div class="hero-meta-item">
+                <dt>Localisation</dt>
+                <dd>Rennes / Monterfil</dd>
+              </div>
+              <div class="hero-meta-item">
+                <dt>Spécialité</dt>
+                <dd>Infrastructure &amp; Open-Source</dd>
+              </div>
+            </dl>
           </div>
-          <div class="hero-meta-item">
-            <dt>Localisation</dt>
-            <dd>Rennes / Monterfil</dd>
+
+          <div class="hero-photo">
+            <div class="hero-photo-frame" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <p class="hero-photo-caption">[Photo à ajouter]</p>
           </div>
-          <div class="hero-meta-item">
-            <dt>Spécialité</dt>
-            <dd>Infrastructure &amp; Open-Source</dd>
-          </div>
-        </dl>
+        </div>
       </div>
     </section>
 
-    <!-- ===================== COMPÉTENCES TECHNIQUES ===================== -->
-    <section class="skills" aria-labelledby="competences-title">
-      <div class="section-header">
-        <h2 id="competences-title">Compétences techniques</h2>
-        <p>Les briques que je maîtrise et que je mets en pratique dans mes déploiements personnels.</p>
-      </div>
+    <!-- ===================== À PROPOS ===================== -->
+    <section class="content-section" aria-labelledby="apropos-title">
+      <div class="content-section-inner">
+        <h2 id="apropos-title">À propos</h2>
+        <p class="prose">
+          Je m'appelle Raphaël. Actuellement en BTS Services Informatiques
+          aux Organisations, option SISR, je me suis découvert une vraie
+          passion pour l'administration des systèmes et des réseaux :
+          comprendre comment une infrastructure tient debout, du câble
+          réseau jusqu'au serveur, est ce qui m'anime au quotidien.
+        </p>
+        <p class="prose">
+          En dehors des cours, je fais tourner mon propre homelab :
+          virtualisation avec VirtualBox et Ubuntu Server, tunnels sécurisés
+          avec WireGuard, supervision de mon parc avec NetBox. C'est ma
+          façon d'apprendre en pratiquant, et de tester en conditions
+          réelles ce que je découvre en formation.
+        </p>
+        <p class="prose">
+          Basé entre Rennes et Monterfil, je suis aujourd'hui à la
+          recherche d'un stage ou d'une alternance pour continuer à
+          progresser sur ces sujets.
+        </p>
 
-      <div class="skills-grid">
-        <article class="skill-card">
-          <h3>Système</h3>
-          <p class="skill-card-desc">Installation et administration de serveurs Linux, virtualisation d'environnements de test.</p>
-          <ul class="tag-list">
-            <li>Ubuntu Server</li>
-            <li>VirtualBox</li>
-          </ul>
-        </article>
-
-        <article class="skill-card">
-          <h3>Réseau &amp; Sécurité</h3>
-          <p class="skill-card-desc">Mise en place de tunnels chiffrés et configuration du routage inter-réseaux.</p>
-          <ul class="tag-list">
-            <li>WireGuard VPN</li>
-            <li>Routage</li>
-          </ul>
-        </article>
-
-        <article class="skill-card">
-          <h3>Services &amp; Outils</h3>
-          <p class="skill-card-desc">Déploiement et documentation de services applicatifs et d'inventaire réseau.</p>
-          <ul class="tag-list">
-            <li>NetBox (CMDB)</li>
-            <li>Pi-hole</li>
-            <li>Nginx Proxy Manager</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===================== PROJETS & HOMELAB ===================== -->
-    <section class="projects" aria-labelledby="projets-title">
-      <div class="section-header">
-        <h2 id="projets-title">Projets &amp; Homelab</h2>
-        <p>Mes déploiements personnels, pensés et maintenus comme de vraies infrastructures.</p>
-      </div>
-
-      <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-card-header">
-            <h3>Homelab de virtualisation</h3>
-            <span class="status-badge"><span class="status-dot" aria-hidden="true"></span>Opérationnel</span>
-          </div>
-          <p>Environnement de virtualisation sous VirtualBox hébergeant plusieurs
-            machines Ubuntu Server, utilisé comme terrain d'expérimentation pour
-            l'administration système et réseau.</p>
-          <ul class="tag-list mono">
-            <li>VirtualBox</li>
-            <li>Ubuntu Server</li>
-            <li>Homelab</li>
-          </ul>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-header">
-            <h3>Pi-hole &amp; accès distant sécurisé</h3>
-            <span class="status-badge"><span class="status-dot" aria-hidden="true"></span>Opérationnel</span>
-          </div>
-          <p>Filtrage DNS pour l'ensemble du réseau local via Pi-hole, avec un
-            accès distant sécurisé par tunnel WireGuard pour l'administration
-            en dehors du réseau domestique.</p>
-          <ul class="tag-list mono">
-            <li>Pi-hole</li>
-            <li>WireGuard</li>
-            <li>DNS</li>
-          </ul>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-header">
-            <h3>Documentation d'infrastructure</h3>
-            <span class="status-badge"><span class="status-dot" aria-hidden="true"></span>Opérationnel</span>
-          </div>
-          <p>Inventaire et documentation des équipements et adresses IP du
-            homelab via NetBox, utilisé comme CMDB (Configuration Management
-            Database).</p>
-          <ul class="tag-list mono">
-            <li>NetBox</li>
-            <li>CMDB</li>
-            <li>Documentation</li>
-          </ul>
-        </article>
+        <p class="todo-note">
+          <span aria-hidden="true">//</span>
+          <span><strong>Texte par défaut :</strong> réécris ce paragraphe
+          avec ton vrai parcours, le nom de ton établissement et tes
+          centres d'intérêt personnels — garde juste la structure si tu
+          veux.</span>
+        </p>
       </div>
     </section>
 
