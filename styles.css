@@ -725,6 +725,11 @@ svg {
   color: var(--color-accent-blue);
 }
 
+.page-toc a[aria-current="page"] {
+  color: var(--color-accent-blue);
+  pointer-events: none;
+}
+
 /* =====================================================================
    BOUTON RETOUR EN HAUT
    ===================================================================== */
