@@ -622,6 +622,44 @@ svg {
   margin-top: 0.5rem;
 }
 
+.competency-bloc {
+  margin-top: 0.5rem;
+}
+
+.competency-bloc + .competency-bloc {
+  margin-top: 2rem;
+}
+
+.competency-item {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--color-border);
+}
+
+.competency-code {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.375rem;
+}
+
+.competency-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-accent-blue);
+  flex-shrink: 0;
+}
+
+.competency-activities {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
 /* Liste de liens vers des productions/documents */
 .production-list {
   list-style: none;
