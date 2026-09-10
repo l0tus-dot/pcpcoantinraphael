@@ -655,9 +655,15 @@ svg {
   flex-shrink: 0;
 }
 
-.competency-activities {
-  font-size: 0.875rem;
-  color: var(--color-text-secondary);
+.competency-summary {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border);
+  padding: 0.3125rem 0.625rem;
+  border-radius: 6px;
 }
 
 /* Liste de liens vers des productions/documents */
