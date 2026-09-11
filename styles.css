@@ -545,35 +545,6 @@ svg {
   color: var(--color-text-body);
 }
 
-/* Note "à personnaliser" — esthétique commentaire de code */
-.todo-note {
-  display: flex;
-  gap: 0.625rem;
-  align-items: flex-start;
-  font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  line-height: 1.55;
-  color: var(--color-accent-orange);
-  background: var(--color-accent-orange-dim);
-  border: 1px dashed rgba(249, 115, 22, 0.45);
-  border-radius: var(--radius-md);
-  padding: 0.875rem 1rem;
-  margin-top: 1.75rem;
-  max-width: 65ch;
-}
-
-.todo-note strong {
-  color: var(--color-text-primary);
-  font-weight: 600;
-}
-
-.todo-note code {
-  background: rgba(0, 0, 0, 0.25);
-  padding: 0.05em 0.4em;
-  border-radius: 4px;
-  color: var(--color-text-primary);
-}
-
 /* Sections de contenu */
 .content-section {
   padding-block: 3rem;
@@ -948,62 +919,6 @@ svg {
 }
 
 /* =====================================================================
-   MINI-DASHBOARD (accueil)
-   ===================================================================== */
-
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-  margin-top: 1.75rem;
-}
-
-.dashboard-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-subtle);
-  padding: 1.5rem;
-  transition: transform 0.15s ease, border-color 0.15s ease;
-}
-
-.dashboard-card:hover,
-.dashboard-card:focus-visible {
-  transform: translateY(-2px);
-  border-color: rgba(59, 130, 246, 0.4);
-}
-
-.dashboard-card-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 50%;
-  background: var(--color-accent-blue-dim);
-  color: var(--color-accent-blue);
-}
-
-.dashboard-card-icon svg {
-  width: 18px;
-  height: 18px;
-}
-
-.dashboard-card-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--color-text-primary);
-}
-
-.dashboard-card-desc {
-  font-size: 0.875rem;
-  color: var(--color-text-secondary);
-}
-
-/* =====================================================================
    PAGINATION SUIVANT / PRÉCÉDENT
    ===================================================================== */
 
@@ -1121,10 +1036,6 @@ svg {
   .school-card {
     flex: 1 1 0;
     min-width: 0;
-  }
-
-  .dashboard-grid {
-    grid-template-columns: 1fr;
   }
 
   .page-pagination {
