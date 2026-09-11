@@ -84,7 +84,7 @@
     </section>
 
     <!-- ===================== CONTEXTE ===================== -->
-    <section class="content-section" aria-labelledby="contexte-title">
+    <section class="content-section reveal" aria-labelledby="contexte-title">
       <div class="content-section-inner">
         <h2 id="contexte-title">Contexte</h2>
         <p class="prose">
@@ -95,7 +95,7 @@
     </section>
 
     <!-- ===================== MISSIONS ===================== -->
-    <section class="content-section" aria-labelledby="missions-title">
+    <section class="content-section reveal" aria-labelledby="missions-title">
       <div class="content-section-inner">
         <h2 id="missions-title">Missions</h2>
         <ol class="steps-list">
@@ -120,7 +120,7 @@
     </section>
 
     <!-- ===================== COMPÉTENCES VALIDÉES ===================== -->
-    <section class="content-section" aria-labelledby="competences-title">
+    <section class="content-section reveal" aria-labelledby="competences-title">
       <div class="content-section-inner">
         <h2 id="competences-title">Compétences validées (référentiel BTS SIO SISR)</h2>
         <p class="todo-note">
@@ -160,7 +160,7 @@
     </section>
 
     <!-- ===================== LIENS VERS LES DOCUMENTS ===================== -->
-    <section class="content-section" aria-labelledby="documents-title">
+    <section class="content-section reveal" aria-labelledby="documents-title">
       <div class="content-section-inner">
         <h2 id="documents-title">Liens vers les documents</h2>
         <ul class="production-list">
@@ -179,7 +179,7 @@
     </section>
 
     <!-- ===================== BILAN ===================== -->
-    <section class="content-section" aria-labelledby="bilan-title">
+    <section class="content-section reveal" aria-labelledby="bilan-title">
       <div class="content-section-inner">
         <h2 id="bilan-title">Bilan</h2>
         <p class="prose">
@@ -188,10 +188,29 @@
       </div>
     </section>
 
+  <div class="content-section-inner">
+      <nav class="page-pagination" aria-label="Navigation entre les stages">
+        <a class="pagination-link prev" href="les-stages.html">
+          <span class="pagination-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
+            Précédent
+          </span>
+          <span class="pagination-title">Stage de 1ʳᵉ année</span>
+        </a>
+      </nav>
+    </div>
+
   </main>
 
   <!-- ===================== FOOTER / CONTACT ===================== -->
   <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-label">Contact</p>
+        <a class="footer-email" href="mailto:raphael.coantin@exemple.fr">raphael.coantin@exemple.fr</a>
+      </div>
+      <a class="btn btn-primary" href="cv-raphael-coantin.pdf" download>Télécharger mon CV</a>
+    </div>
     <p class="footer-copy">© 2026 Raphaël — BTS SIO SISR</p>
   </footer>
 
@@ -201,6 +220,8 @@
       <path d="M5 12l7-7 7 7"></path>
     </svg>
   </a>
+
+  <script src="scroll-reveal.js" defer></script>
 
 </body>
 </html>

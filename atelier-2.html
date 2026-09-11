@@ -83,7 +83,7 @@
     </section>
 
     <!-- ===================== CONTEXTE ET PROBLÉMATIQUE ===================== -->
-    <section class="content-section" aria-labelledby="contexte-title">
+    <section class="content-section reveal" aria-labelledby="contexte-title">
       <div class="content-section-inner">
         <h2 id="contexte-title">Contexte et problématique</h2>
         <p class="prose">
@@ -93,7 +93,7 @@
     </section>
 
     <!-- ===================== SOLUTION MISE EN ŒUVRE ===================== -->
-    <section class="content-section" aria-labelledby="solution-title">
+    <section class="content-section reveal" aria-labelledby="solution-title">
       <div class="content-section-inner">
         <h2 id="solution-title">Solution mise en œuvre</h2>
         <ol class="steps-list">
@@ -123,7 +123,7 @@
     </section>
 
     <!-- ===================== COMPÉTENCES MOBILISÉES ===================== -->
-    <section class="content-section" aria-labelledby="competences-title">
+    <section class="content-section reveal" aria-labelledby="competences-title">
       <div class="content-section-inner">
         <h2 id="competences-title">Compétences mobilisées</h2>
         <ul class="tag-list mono">
@@ -135,7 +135,7 @@
     </section>
 
     <!-- ===================== BILAN ===================== -->
-    <section class="content-section" aria-labelledby="bilan-title">
+    <section class="content-section reveal" aria-labelledby="bilan-title">
       <div class="content-section-inner">
         <h2 id="bilan-title">Bilan</h2>
         <p class="prose">
@@ -144,10 +144,29 @@
       </div>
     </section>
 
+  <div class="content-section-inner">
+      <nav class="page-pagination" aria-label="Navigation entre les ateliers">
+        <a class="pagination-link prev" href="atelier-professionnalisation.html">
+          <span class="pagination-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
+            Précédent
+          </span>
+          <span class="pagination-title">Atelier n°1</span>
+        </a>
+      </nav>
+    </div>
+
   </main>
 
   <!-- ===================== FOOTER / CONTACT ===================== -->
   <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-label">Contact</p>
+        <a class="footer-email" href="mailto:raphael.coantin@exemple.fr">raphael.coantin@exemple.fr</a>
+      </div>
+      <a class="btn btn-primary" href="cv-raphael-coantin.pdf" download>Télécharger mon CV</a>
+    </div>
     <p class="footer-copy">© 2026 Raphaël — BTS SIO SISR</p>
   </footer>
 
@@ -157,6 +176,8 @@
       <path d="M5 12l7-7 7 7"></path>
     </svg>
   </a>
+
+  <script src="scroll-reveal.js" defer></script>
 
 </body>
 </html>
